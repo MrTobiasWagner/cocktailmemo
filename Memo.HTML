@@ -81,7 +81,7 @@
     function flipCard(card) {
       if (!card.flipped && flippedCards.length < 2) {
         var cardIndex = Array.prototype.indexOf.call(card.parentNode.children, card);
-        card.style.backgroundImage = "url('https://mrtobiaswagner.github.io/Organisationslehre/" + cards[cardIndex].frontImage + ".png')";
+        card.style.backgroundImage = "url('https://mrtobiaswagner.github.io/cocktailmemo/" + cards[cardIndex].frontImage + ".png')";
         cards[cardIndex].flipped = true;
         flippedCards.push(card);
 
@@ -99,8 +99,8 @@
             }
           } else {
             setTimeout(function() {
-              flippedCards[0].style.backgroundImage = "url('https://mrtobiaswagner.github.io/Organisationslehre/memoback.png')";
-              flippedCards[1].style.backgroundImage = "url('https://mrtobiaswagner.github.io/Organisationslehre/memoback.png')";
+              flippedCards[0].style.backgroundImage = "url('https://mrtobiaswagner.github.io/cocktailmemo/cocktail_memoback.JPG')";
+              flippedCards[1].style.backgroundImage = "url('https://mrtobiaswagner.github.io/cocktailmemo/cocktail_memoback.JPG')";
               cards[flippedIndices[0]].flipped = false;
               cards[flippedIndices[1]].flipped = false;
               flippedCards = [];
@@ -127,7 +127,7 @@
 
       var cardElements = document.getElementsByClassName("card");
       for (var i = 0; i < cardElements.length; i++) {
-        cardElements[i].style.backgroundImage = "url('https://mrtobiaswagner.github.io/Organisationslehre/memoback.png')";
+        cardElements[i].style.backgroundImage = "url('https://mrtobiaswagner.github.io/cocktailmemo/memoback.JPG')";
         cards[i].flipped = false;
       }
     }
